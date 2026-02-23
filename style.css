@@ -411,8 +411,9 @@ button {
 
 .projects-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 3rem;
+    justify-items: center;
 }
 
 .project-card {
@@ -421,7 +422,9 @@ button {
     overflow: hidden;
     transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.4s ease;
     padding: 0 !important;
-    /* Remove padding from glass-panel */
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .project-card:hover {
