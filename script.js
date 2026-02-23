@@ -70,6 +70,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const revealElements = document.querySelectorAll('.scroll-reveal');
     revealElements.forEach(el => revealObserver.observe(el));
 
+    // Trigger reveals for elements already in viewport on load
+    setTimeout(() => {
+        revealElements.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight) {
+                el.classList.add('active');
+            }
+        });
+    }, 100);
+
     // Contact Form AJAX Submission
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {

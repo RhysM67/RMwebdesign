@@ -615,17 +615,33 @@ textarea.form-input {
     height: 100vh;
     background: var(--bg-dark);
     z-index: 100000;
+    -webkit-animation: swooshUp 1.2s cubic-bezier(0.77, 0, 0.175, 1) forwards;
     animation: swooshUp 1.2s cubic-bezier(0.77, 0, 0.175, 1) forwards;
     pointer-events: none;
     border-bottom: 2px solid var(--accent-secondary);
 }
 
-@keyframes swooshUp {
+@-webkit-keyframes swooshUp {
     0% {
+        -webkit-transform: translateY(0);
         transform: translateY(0);
     }
 
     100% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+        display: none;
+    }
+}
+
+@keyframes swooshUp {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(-100%);
         transform: translateY(-100%);
         display: none;
     }
