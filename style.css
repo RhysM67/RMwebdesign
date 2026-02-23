@@ -398,6 +398,92 @@ button {
 }
 
 /* =========================================
+   Projects Section
+   ========================================= */
+.projects-section {
+    padding: 6rem 0;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 3rem;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.4s ease;
+    padding: 0;
+    /* Remove padding from glass-panel */
+}
+
+.project-card:hover {
+    border-color: var(--accent-secondary);
+    transform: translateY(-5px) scale(1.02);
+}
+
+.project-image-placeholder {
+    height: 220px;
+    background: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid var(--glass-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-image-placeholder span {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    z-index: 2;
+}
+
+/* This creates a mini orb effect inside the placeholder image */
+.orb-preview {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle at center, rgba(45, 212, 191, 0.2), transparent 70%);
+    border-radius: 50%;
+    filter: blur(20px);
+    z-index: 1;
+}
+
+.project-info {
+    padding: 2rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-info h3 {
+    font-size: 1.5rem;
+    color: var(--text-main);
+    margin-bottom: 0.5rem;
+}
+
+.project-info p {
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.project-tags .badge {
+    margin-bottom: 0;
+    font-size: 0.75rem;
+    padding: 0.2rem 0.8rem;
+}
+
+/* =========================================
    Process Timeline
    ========================================= */
 .process-section {
@@ -659,34 +745,34 @@ textarea.form-input {
     height: 100vh;
     background: var(--bg-dark);
     z-index: 100000;
-    -webkit-animation: swooshUp 1.2s cubic-bezier(0.77, 0, 0.175, 1) forwards;
-    animation: swooshUp 1.2s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+    -webkit-animation: swooshDown 1.2s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+    animation: swooshDown 1.2s cubic-bezier(0.77, 0, 0.175, 1) forwards;
     pointer-events: none;
-    border-bottom: 2px solid var(--accent-secondary);
+    border-top: 2px solid var(--accent-secondary);
 }
 
-@-webkit-keyframes swooshUp {
+@-webkit-keyframes swooshDown {
     0% {
         -webkit-transform: translateY(0);
         transform: translateY(0);
     }
 
     100% {
-        -webkit-transform: translateY(-100%);
-        transform: translateY(-100%);
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
         display: none;
     }
 }
 
-@keyframes swooshUp {
+@keyframes swooshDown {
     0% {
         -webkit-transform: translateY(0);
         transform: translateY(0);
     }
 
     100% {
-        -webkit-transform: translateY(-100%);
-        transform: translateY(-100%);
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
         display: none;
     }
 }
