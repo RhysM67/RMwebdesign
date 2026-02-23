@@ -605,6 +605,44 @@ textarea.form-input {
 }
 
 /* =========================================
+   Advanced Animations
+   ========================================= */
+.page-transition {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--bg-dark);
+    z-index: 100000;
+    animation: swooshUp 1.2s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+    pointer-events: none;
+    border-bottom: 2px solid var(--accent-secondary);
+}
+
+@keyframes swooshUp {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100%);
+        display: none;
+    }
+}
+
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.scroll-reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* =========================================
    Responsive Design
    ========================================= */
 @media (max-width: 768px) {

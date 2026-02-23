@@ -51,6 +51,25 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Intersection Observer for Scroll Reveals
+    const revealOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.15
+    };
+
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target); // Only animate once
+            }
+        });
+    }, revealOptions);
+
+    const revealElements = document.querySelectorAll('.scroll-reveal');
+    revealElements.forEach(el => revealObserver.observe(el));
+
     // Contact Form AJAX Submission
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
