@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inquire | RM Web Works</title>
+    <meta name="description"
+        content="Get in touch with RM Web Works to start designing your next soaring web experience.">
+    <!-- Google Fonts: Outfit for headings, Inter for body text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-trail" id="cursor-trail"></div>
+
+    <!-- Animated Abstract Background -->
+    <div class="ambient-background">
+        <div class="ambient-orb orb-1"></div>
+        <div class="ambient-orb orb-2"></div>
+        <div class="ambient-orb orb-3"></div>
+    </div>
+
+    <!-- Main Content Wrapper -->
+    <main class="app-container">
+        <!-- Navigation -->
+        <nav class="glass-nav float-element" style="--float-delay: 0s;">
+            <div class="logo">RM Web Works</div>
+        </nav>
+
+        <!-- Contact Form Section -->
+        <section class="contact-section float-element" style="--float-delay: 0.2s;">
+            <div class="glass-panel">
+                <h1 class="section-title glow-text" style="margin-bottom: 1rem;">Let's Connect</h1>
+                <p style="text-align: center; color: var(--text-muted); margin-bottom: 3rem;">Tell us about your project
+                    and we'll handle the rest.</p>
+
+                <div id="form-success" class="form-success-msg" style="display: none;">
+                    <div class="card-icon">🚀</div>
+                    <h3>Transmission Successful</h3>
+                    <p>We've received your coordinates. We'll be in touch shortly.</p>
+                </div>
+
+                <form id="contact-form" action="https://formspree.io/f/mvzbvolr" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Jane Doe" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="hello@example.com"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project">Project Details</label>
+                        <textarea id="project" name="project" class="form-input"
+                            placeholder="We need to build a new platform and host it..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary form-submit glow-btn" style="margin-bottom: 1rem;">Send
+                        Message</button>
+                    <a href="index.html" class="btn-secondary form-submit"
+                        style="text-align: center; box-sizing: border-box; display: block; margin-top: 0;">Return
+                        Home</a>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
