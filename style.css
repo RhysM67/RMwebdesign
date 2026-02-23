@@ -404,6 +404,10 @@ button {
     padding: 6rem 0;
 }
 
+.project-panel {
+    padding: 4rem;
+}
+
 .projects-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
@@ -838,12 +842,14 @@ textarea.form-input {
         left: 1px;
     }
 
-    .cards-container {
+    .cards-container,
+    .projects-container {
         grid-template-columns: 1fr;
     }
 
     .edge-card,
-    .glass-panel {
+    .glass-panel,
+    .project-panel {
         padding: 2.5rem 1.5rem;
     }
 
