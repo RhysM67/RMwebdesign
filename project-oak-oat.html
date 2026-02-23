@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Mission: Oak & Oat | RM Web Works</title>
+    <meta name="description" content="View the Oak & Oat coffee shop website project.">
+    <!-- Google Fonts: Outfit for headings, Inter for body text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=2">
+
+    <style>
+        .image-showcase {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-top: 3rem;
+            margin-bottom: 5rem;
+        }
+
+        .showcase-plate {
+            padding: 1.5rem;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .showcase-image {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border: 1px solid var(--glass-border);
+            display: block;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: var(--accent-secondary);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Page Load Transition Swoosh -->
+    <div class="page-transition"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-trail" id="cursor-trail"></div>
+
+    <!-- Animated Abstract Background -->
+    <div class="ambient-background">
+        <div class="ambient-orb orb-1"></div>
+        <div class="ambient-orb orb-2"></div>
+        <div class="ambient-orb orb-3"></div>
+    </div>
+
+    <!-- Main Content Wrapper -->
+    <main class="app-container">
+        <!-- Navigation -->
+        <nav class="glass-nav float-element" style="--float-delay: 0s;">
+            <div class="logo">RM Web Works</div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="projects.html" class="nav-link active">Projects</a>
+                <a href="contact.html" class="nav-link">Enquire</a>
+            </div>
+        </nav>
+
+        <!-- Image Viewer Section -->
+        <section class="image-showcase float-element" style="--float-delay: 0.2s;">
+            <div class="glass-panel showcase-plate">
+                <a href="projects.html" class="back-link">
+                    <span>&larr;</span> Back to Projects
+                </a>
+                <h1 class="section-title glow-text" style="font-size: 2rem; text-align: left; margin-bottom: 2rem;">Oak
+                    & Oat by Kasey</h1>
+                <img src="full_oak_oat_page.png" alt="Oak & Oat Full Website Design" class="showcase-image">
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
