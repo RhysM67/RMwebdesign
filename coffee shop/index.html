@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oak & Oat by Kasey | Specialty Coffee & Pastries</title>
+    <meta name="description"
+        content="Discover Bothwell's finest specialty coffee shop. Indulge in our signature pour-overs, artisanal espresso, and fresh seasonal pastries.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                Oak & Oat
+                <span class="logo-subtext">by Kasey</span>
+            </a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#booking">Bookings</a>
+                <a href="#reviews">Reviews</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle Navigation">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-content fade-in-up">
+            <img src="assets/images/coffee_stencil.png" alt="Coffee Bean Stencil"
+                class="decorative-stencil stencil-hero">
+            <h1>Welcome to Oak & Oat</h1>
+            <p class="hero-subtext">by Kasey</p>
+            <p>Exceptional coffee, mindfully roasted and crafted with passion.</p>
+        </div>
+        <div class="hero-bg fade-in-up">
+            <img src="assets/images/hero_coffee.png" alt="Interior of Oak & Oat high-end rustic coffee shop"
+                class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <a href="#menu" class="btn btn-primary fade-in-up">View the Menu</a>
+    </header>
+
+    <!-- Menu Spotlight Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="section-header text-center fade-in-up">
+                <h2>Our Offerings</h2>
+                <div class="separator"></div>
+                <p>From precision pour-overs to rich, textured milk drinks, every cup is a celebration of flavor.</p>
+            </div>
+
+            <div class="spotlight-grid">
+                <div class="spotlight-image-wrapper fade-in-right">
+                    <img src="assets/images/coffee_spotlight.png" alt="Beautiful latte art in a rustic ceramic cup"
+                        class="spotlight-image">
+                    <div class="image-accent"></div>
+                </div>
+                <div class="spotlight-content fade-in-left">
+                    <span class="badge">House Specialty</span>
+                    <h3>The Oak & Oat Flat White</h3>
+                    <p>Our signature espresso blend, perfectly extracted and paired with velvety, micro-foamed milk from
+                        local dairy farms. A rich, caramel-forward profile with subtle notes of dark chocolate and
+                        hazelnut.</p>
+                    <p class="price">£3.80</p>
+                    <a href="#booking" class="btn btn-outline">Reserve a Table</a>
+                </div>
+            </div>
+
+            <!-- Other Menu Items Grid -->
+            <div class="menu-grid">
+                <div class="menu-item fade-in-up" style="animation-delay: 0.1s;">
+                    <h4>Filter Brew Bar</h4>
+                    <p>Rotating single-origin beans, brewed via V60 or Chemex. Ask for today's profile.</p>
+                    <span class="price">£4.00</span>
+                </div>
+                <div class="menu-item fade-in-up" style="animation-delay: 0.2s;">
+                    <h4>Cortado</h4>
+                    <p>Equal parts espresso and warm milk for a strong, balanced flavor.</p>
+                    <span class="price">£3.40</span>
+                </div>
+                <div class="menu-item fade-in-up" style="animation-delay: 0.3s;">
+                    <h4>Spiced Chai Latte</h4>
+                    <p>House-blended whole spices, black tea, and warmly textured milk.</p>
+                    <span class="price">£4.20</span>
+                </div>
+                <div class="menu-item fade-in-up" style="animation-delay: 0.4s;">
+                    <h4>Artisanal Pastries</h4>
+                    <p>Fresh cardamom buns, flaky croissants, and our famous banana bread.</p>
+                    <span class="price">From £3.50</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking / Calendar Section -->
+    <section id="booking" class="booking-section dark-section">
+        <img src="assets/images/coffee_stencil.png" alt="Coffee Stencil" class="decorative-stencil stencil-booking">
+        <div class="container">
+            <div class="booking-layout">
+                <div class="booking-info fade-in-right">
+                    <h2>Reserve a Workspace or Table</h2>
+                    <p>Ensure you have the perfect spot for your morning brew or meeting. Book a cozy corner to catch
+                        up, or reserve beans for collection.</p>
+                    <ul class="booking-perks">
+                        <li>★ Guaranteed window seating</li>
+                        <li>★ Power access for remote working</li>
+                        <li>★ Reserve limited-edition retail coffee beans</li>
+                    </ul>
+                </div>
+
+                <!-- Custom UI Calendar Widget -->
+                <div class="calendar-widget fade-in-left">
+                    <div class="calendar-header">
+                        <button class="cal-nav">&lt;</button>
+                        <h3 class="cal-month">October 2026</h3>
+                        <button class="cal-nav">&gt;</button>
+                    </div>
+                    <div class="calendar-days-grid">
+                        <span>Su</span><span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span>
+                    </div>
+                    <div class="calendar-dates-grid" id="calendarGrid">
+                        <!-- Populated by JS -->
+                    </div>
+                    <div class="booking-form-mini">
+                        <select class="form-input">
+                            <option>Table Reservation</option>
+                            <option>Retail Beans Collection</option>
+                        </select>
+                        <select class="form-input">
+                            <option>10:00 AM</option>
+                            <option>11:00 AM</option>
+                            <option>12:00 PM</option>
+                            <option>01:00 PM</option>
+                            <option>02:00 PM</option>
+                        </select>
+                        <button class="btn btn-primary full-width">Confirm Selection</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews-section">
+        <div class="container container-sm text-center">
+            <h2 class="fade-in-up">Word on the Street</h2>
+            <div class="separator center"></div>
+
+            <div class="testimonial-slider fade-in-up">
+                <div class="testimonial active">
+                    <div class="stars">★★★★★</div>
+                    <p class="quote">"Absolutely the best flat white I have ever tasted in my life. The cozy atmosphere
+                        makes it the perfect Sunday morning hideaway to get some work done."</p>
+                    <p class="author">- James C., Local Resident</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Location -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2>Oak & Oat</h2>
+                    <p class="brand-subtext">by Kasey</p>
+                    <p>Exceptional coffee, mindfully roasted.</p>
+                    <div class="social-links">
+                        <a href="#">IG</a>
+                        <a href="#">FB</a>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h4>Visit Us</h4>
+                    <p>High Street<br>Bothwell, G71 8XX</p>
+                    <p>kasey@oakandoat.com<br>01698 123456</p>
+                </div>
+                <div class="footer-hours">
+                    <h4>Opening Hours</h4>
+                    <p>Tue - Fri: 8am - 4pm<br>Sat - Sun: 9am - 4pm<br>Mon: Closed</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Oak & Oat by Kasey. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
