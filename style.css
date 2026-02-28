@@ -442,9 +442,10 @@ button {
 }
 
 .iframe-wrapper {
-    width: 400%;
-    /* Render extremely wide to force desktop layout */
-    height: 400%;
+    width: 1440px;
+    /* Hardcode a desktop resolution width */
+    height: 1000px;
+    /* Hardcode a sufficient height */
     border: none;
     transform: scale(0.25);
     transform-origin: top left;
