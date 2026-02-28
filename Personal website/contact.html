@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RM Web Works | Professional Website Design</title>
-    <meta name="description" content="RM Web Works builds modern, high-performance websites. Your Vision, Coded.">
+    <title>Enquire | RM Web Works</title>
+    <meta name="description"
+        content="Get in touch with RM Web Works to start designing your next soaring web experience.">
     <!-- Google Fonts: Outfit for headings, Inter for body text -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,91 +44,51 @@
         <nav class="glass-nav float-element" style="--float-delay: 0s;">
             <div class="logo">RM Web Works</div>
             <div class="nav-links">
-                <a href="index.html" class="nav-link active">Home</a>
+                <a href="index.html" class="nav-link">Home</a>
                 <a href="projects.html" class="nav-link">Projects</a>
-                <a href="contact.html" class="nav-link">Enquire</a>
+                <a href="contact.html" class="nav-link active">Enquire</a>
             </div>
         </nav>
 
-        <!-- Hero Section -->
-        <section class="hero glass-panel float-element" style="--float-delay: 0.2s;">
-            <div class="hero-content">
-                <h1 class="glow-text float-inner" style="--float-delay: 0.1s;">Web Design with Weightless Performance.
-                </h1>
-                <p class="float-inner" style="--float-delay: 0.3s;">Lightweight code. Heavyweight results. We handle
-                    your design, hosting, and domain for unstoppable momentum.</p>
-                <div class="hero-actions float-inner" style="--float-delay: 0.5s;">
-                    <a href="contact.html" class="btn-primary glow-btn">Enquire for free now</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Floating Service Cards -->
-        <section id="services" class="services-section scroll-reveal">
-            <h2 class="section-title glow-text">Core Capabilities</h2>
-            <div class="cards-container">
-                <div class="glass-card float-element" style="--float-delay: 0.4s;">
-                    <div class="card-icon">⚡</div>
-                    <h3>Aero-dynamic UI</h3>
-                    <div class="badge">Design</div>
-                    <p>Sleek, fast, and beautiful. We craft interfaces that are a joy to navigate, free from the
-                        friction of bad design.</p>
-                </div>
-
-                <div class="glass-card float-element" style="--float-delay: 0.7s;">
-                    <div class="card-icon">🌐</div>
-                    <h3>Zero-Friction Infrastructure</h3>
-                    <div class="badge">Hosting</div>
-                    <p>99.9% uptime and instant loading. Your website propelled by state-of-the-art server architecture.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Launch Process Timeline -->
-        <section id="process" class="process-section float-element scroll-reveal" style="--float-delay: 0.2s;">
+        <!-- Contact Form Section -->
+        <section class="contact-section float-element" style="--float-delay: 0.2s;">
             <div class="glass-panel">
-                <h2 class="section-title glow-text">The Deployment Process</h2>
-                <div class="timeline">
-                    <div class="timeline-step">
-                        <div class="step-marker">1</div>
-                        <div class="step-content">
-                            <h4>Discovery & Strategy</h4>
-                            <p>Mapping out the ideal user journey for your brand.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-step">
-                        <div class="step-marker">2</div>
-                        <div class="step-content">
-                            <h4>Design & Prototyping</h4>
-                            <p>Creating the "Aero-dynamic UI" for optimal user flow.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-step">
-                        <div class="step-marker">3</div>
-                        <div class="step-content">
-                            <h4>Development & Testing</h4>
-                            <p>Coding with "Weightless Performance" principles.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-step">
-                        <div class="step-marker">4</div>
-                        <div class="step-content">
-                            <h4>Go-Live</h4>
-                            <p>Deploying onto our "Seamless Infrastructure."</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                <h1 class="section-title glow-text" style="margin-bottom: 1rem;">Let's Connect</h1>
+                <p style="text-align: center; color: var(--text-muted); margin-bottom: 3rem;">Tell us about your project
+                    and we'll handle the rest.</p>
 
-        <!-- All-In-One Edge -->
-        <section id="edge" class="edge-section scroll-reveal">
-            <div class="glass-card edge-card float-element" style="--float-delay: 0.5s;">
-                <h2 class="section-title glow-text">The All-In-One Edge</h2>
-                <p class="edge-text">Why juggle multiple vendors? We bring Design, Hosting, and Domain management under
-                    one roof. Less friction. Faster delivery. Total control.</p>
-                <a href="contact.html" class="btn-secondary">Start Your Free Enquiry</a>
+                <div id="form-success" class="form-success-msg" style="display: none;">
+                    <div class="card-icon">🚀</div>
+                    <h3>Transmission Successful</h3>
+                    <p>We've received your coordinates. We'll be in touch shortly.</p>
+                    <a href="index.html" class="btn-primary glow-btn"
+                        style="margin-top: 1.5rem; display: inline-block;">Return Home</a>
+                </div>
+
+                <form id="contact-form" action="https://formspree.io/f/mvzbvolr" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Jane Doe" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="hello@example.com"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project">Project Details</label>
+                        <textarea id="project" name="project" class="form-input"
+                            placeholder="We need to build a new platform and host it..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary form-submit glow-btn" style="margin-bottom: 1rem;">Send
+                        Free Enquiry</button>
+                    <a href="index.html" class="btn-secondary form-submit"
+                        style="text-align: center; box-sizing: border-box; display: block; margin-top: 0;">Return
+                        Home</a>
+                </form>
             </div>
         </section>
 
@@ -161,7 +122,6 @@
             <p style="margin-top: 2rem; color: var(--text-muted); font-size: 0.85rem;">&copy; 2026 RM Web Works. All
                 rights reserved.</p>
         </footer>
-
     </main>
 
     <script src="script.js"></script>
