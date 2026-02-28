@@ -12,8 +12,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;600;800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=5">
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css?v=7">
+    <!-- Comprehensive Favicons for Google Search and Modern Devices -->
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <meta name="theme-color" content="#o0o000">
 
     <style>
         .image-showcase {
@@ -55,6 +61,41 @@
             height: 100%;
             border: none;
             /* Allow scrolling, but the sandbox attribute in the HTML will prevent clicks/forms */
+        }
+
+        /* Mobile Adjustments for Full-Screen Iframe */
+        @media (max-width: 768px) {
+            .showcase-plate {
+                padding: 1rem 0;
+                /* Remove side padding so iframe hits edges */
+                background: none;
+                /* Make the plate invisible so it doesn't look like a box */
+                box-shadow: none;
+                border: none;
+            }
+
+            .image-showcase {
+                /* Break out of the global .app-container padding */
+                width: 100vw;
+                margin-left: -5vw;
+            }
+
+            .iframe-showcase-container {
+                border-radius: 0;
+                box-shadow: none;
+                height: 90vh;
+                /* Taller on mobile to feel like an app */
+            }
+
+            .section-title {
+                padding: 0 5vw;
+                /* bring title padding back since container lost it */
+            }
+
+            .back-link {
+                margin-left: 5vw;
+                /* bring link padding back */
+            }
         }
 
         .back-link {
@@ -112,6 +153,7 @@
                 <div class="iframe-showcase-container">
                     <iframe src="https://venerable-faun-467e30.netlify.app/" class="iframe-showcase" tabindex="-1"
                         sandbox="allow-scripts allow-same-origin"></iframe>
+                    <div class="iframe-shield"></div>
                 </div>
             </div>
         </section>
