@@ -202,6 +202,34 @@ button {
     text-align: center;
 }
 
+.rating-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--glass-border);
+    border-radius: 100px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    /* Safari support */
+}
+
+.rating-pill:hover {
+    border-color: rgba(251, 191, 36, 0.4);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.rating-pill .stars {
+    color: #fbbf24;
+    font-size: 1rem;
+}
+
 .btn-primary,
 .btn-secondary {
     display: inline-block;
@@ -399,6 +427,48 @@ button {
 }
 
 /* =========================================
+   Client Reviews Section
+   ========================================= */
+.reviews-section {
+    padding: 2rem 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.review-card {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.review-stars {
+    color: #fbbf24;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    margin-bottom: 1.5rem;
+}
+
+.review-quote {
+    font-size: 1.1rem;
+    font-style: italic;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: var(--text-main);
+}
+
+.reviewer-name {
+    color: var(--accent-secondary);
+    margin-bottom: 0.2rem;
+    font-size: 1.1rem;
+}
+
+.reviewer-badge {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* =========================================
    Projects Section
    ========================================= */
 .projects-section {
@@ -442,16 +512,14 @@ button {
 }
 
 .iframe-wrapper {
-    width: 400%;
-    /* Render extremely wide to force desktop layout */
-    height: 400%;
+    width: 300%;
+    height: 300%;
     border: none;
-    transform: scale(0.25);
+    transform: scale(0.3333);
     transform-origin: top left;
     position: absolute;
     top: 0;
     left: 0;
-    pointer-events: none;
     /* Block iframe scroll/click so card scroll works */
     user-select: none;
 }
